@@ -16,24 +16,26 @@ px &amp;amp; em &amp;amp; rem &amp;amp; %
 布局 flex &amp;amp; bootstrap
 
 javascript
-ES5新增
+ES5
 
 严格模式 
 
 
 ES6新增
 
-new
+新增了哪些
 
-创建一个新对象
-将构造函数的作用域赋给新对象
-执行构造函数的代码
-返回新对象 
+let及适用场景
+
+循环
+闭包
 
 
-this (执行环境)
+如何理解const不可以被再次赋值
+异步解决方案
 
-函数的执行环境一个函">
+写一个基本的promise实例
+12345">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试问题汇总">
 <meta property="og:url" content="http://yoursite.com/2017/03/23/面试问题汇总/index.html">
@@ -49,25 +51,27 @@ px &amp;amp; em &amp;amp; rem &amp;amp; %
 布局 flex &amp;amp; bootstrap
 
 javascript
-ES5新增
+ES5
 
 严格模式 
 
 
 ES6新增
 
-new
+新增了哪些
 
-创建一个新对象
-将构造函数的作用域赋给新对象
-执行构造函数的代码
-返回新对象 
+let及适用场景
+
+循环
+闭包
 
 
-this (执行环境)
+如何理解const不可以被再次赋值
+异步解决方案
 
-函数的执行环境一个函">
-<meta property="og:updated_time" content="2017-03-30T08:43:20.644Z">
+写一个基本的promise实例
+12345">
+<meta property="og:updated_time" content="2017-03-31T08:19:15.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试问题汇总">
 <meta name="twitter:description" content="html
@@ -81,24 +85,26 @@ px &amp;amp; em &amp;amp; rem &amp;amp; %
 布局 flex &amp;amp; bootstrap
 
 javascript
-ES5新增
+ES5
 
 严格模式 
 
 
 ES6新增
 
-new
+新增了哪些
 
-创建一个新对象
-将构造函数的作用域赋给新对象
-执行构造函数的代码
-返回新对象 
+let及适用场景
+
+循环
+闭包
 
 
-this (执行环境)
+如何理解const不可以被再次赋值
+异步解决方案
 
-函数的执行环境一个函">
+写一个基本的promise实例
+12345">
   
     <link rel="alternate" href="/atom.xml" title="Higher&#39;s blog" type="application/atom+xml">
   
@@ -180,12 +186,37 @@ this (执行环境)
 <li>布局 flex &amp; bootstrap</li>
 </ul>
 <h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><ul>
-<li><p>ES5新增</p>
+<li><p>ES5</p>
 <ul>
 <li>严格模式 </li>
 </ul>
 </li>
 <li><p>ES6新增</p>
+<ul>
+<li><p>新增了哪些</p>
+</li>
+<li><p>let及适用场景</p>
+<ul>
+<li>循环</li>
+<li>闭包</li>
+</ul>
+</li>
+<li>如何理解const不可以被再次赋值</li>
+<li><p>异步解决方案</p>
+<ul>
+<li><p>写一个基本的promise实例</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getData</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> data=<span class="string">'hello'</span></div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span>&#123;</div><div class="line">    <span class="keyword">try</span>&#123;</div><div class="line">      setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        resolve(data)    </div><div class="line">      &#125;,<span class="number">100</span>)</div><div class="line">    &#125;<span class="keyword">catch</span>(e)&#123;</div><div class="line">      reject(e)</div><div class="line">    &#125;</div><div class="line">  &#125;)          </div><div class="line">&#125;</div><div class="line">getData()</div><div class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(data)</div><div class="line">  &#125;)</div><div class="line">  .catch(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(e.toString())</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>实现sleep方法</p>
+</li>
+<li>还有哪些其它的异步方案<ul>
+<li>async/await</li>
+<li>generator</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>new</p>
 <ol>
@@ -398,9 +429,15 @@ this (执行环境)
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * 服务端需要设置Access-Control-Allow-Origin:* (未配置也可以上传，但是得不到返回值--#)</div><div class="line"> * IE使用iframe上传，其他可以使用formData上传（未写）</div><div class="line">**/</div><div class="line"><span class="comment">// 引入jQuery</span></div><div class="line">$.fn.ajaxUpload=<span class="function"><span class="keyword">function</span>(<span class="params">opts</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> defaults=&#123;</div><div class="line">    <span class="attr">url</span>:<span class="string">''</span>,</div><div class="line">    <span class="attr">success</span>:<span class="literal">null</span></div><div class="line">  &#125;</div><div class="line">  opts=$.extend(defaults,opts)</div><div class="line">  <span class="keyword">var</span> $input=<span class="keyword">this</span></div><div class="line">  <span class="comment">// 创建form</span></div><div class="line">  $input.wrap(<span class="string">"&lt;form action='"</span>+opts.url+<span class="string">"' method='POST' enctype='multipart/form-data'&gt;&lt;/form&gt;"</span>)</div><div class="line">  <span class="keyword">var</span> $form=$input.parent()</div><div class="line">  <span class="comment">// 创建iframe</span></div><div class="line">  <span class="keyword">var</span> $iframe=$(<span class="string">"&lt;iframe style='display:none' name='hiddenFrame' src='about:blank'&gt;&lt;/iframe&gt;"</span>)</div><div class="line">  $iframe.appendTo($(<span class="string">'body'</span>))</div><div class="line">  $form.attr(<span class="string">'target'</span>,<span class="string">'hiddenFrame'</span>)</div><div class="line">  $form.submit()</div><div class="line">  <span class="comment">// 监听iframe</span></div><div class="line">  $iframe.on(<span class="string">'load'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> result=<span class="keyword">this</span>.contentWindow.document.body.innerHTML</div><div class="line">    opts.success &amp;&amp; opts.success(result)</div><div class="line">    $input.unwrap()</div><div class="line">    $iframe.remove()</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>cors</p>
+<p>通过在服务端设置<code>Access-Control-Allow-Origin:xxx</code>解决跨域，存在兼容性问题，低版本IE不兼容，在支持的浏览器中是最好的跨域解决方案，支持所有类型的HTTP请求</p>
 </li>
-<li>postMessage</li>
-<li>window.name</li>
+<li><p>postMessage</p>
+</li>
+<li><p>window.name<br>原理：window.name设置后不会随着页面url的改变、页面刷新而变化，可利用这一特性来跨域</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * 目标页面应该包含类似 &lt;script&gt;window.name="hello"&lt;/script&gt;</div><div class="line"> */</div><div class="line"><span class="comment">// 创建iframe</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createIframe</span>(<span class="params">src</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> iframe=<span class="built_in">document</span>.createElement(<span class="string">'iframe'</span>)</div><div class="line">  iframe.src=src</div><div class="line">  <span class="built_in">document</span>.body.appendChild(iframe)</div><div class="line">  <span class="keyword">return</span> iframe</div><div class="line">&#125;</div><div class="line"><span class="comment">// 通过window.name跨域</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">crossByName</span>(<span class="params">src,callback</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> proxyFrame=createIframe(src)</div><div class="line">  <span class="keyword">var</span> proxyWindow=proxyFrame.contentWindow</div><div class="line">  proxyFrame.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    proxyFrame.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      callback &amp;&amp; callback(proxyFrame.contentWindow.name)</div><div class="line">      <span class="built_in">document</span>.body.removeChild(proxyFrame)</div><div class="line">    &#125;</div><div class="line">    proxyFrame.src=<span class="string">"about:blank"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>document.domain<br>只能跨子域 通过document.domain只能把当前页面的domain为自身或更高一级的父域</p>
+</li>
 </ul>
 </li>
 <li><p>页面间通信</p>
@@ -422,7 +459,7 @@ this (执行环境)
 <li><p>websocket</p>
 <ul>
 <li><p>node端(代码来自网络)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> net=<span class="built_in">require</span>(<span class="string">'net'</span>)</div><div class="line"><span class="keyword">const</span> crypto=<span class="built_in">require</span>(<span class="string">'crypto'</span>)</div><div class="line"><span class="keyword">const</span> WS=<span class="string">'258EAFA5-E914-47DA-95CA-C5AB0DC85B11'</span> <span class="comment">// 固定字符串</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> server=net.createServer(<span class="function">(<span class="params">socket</span>)=&gt;</span>&#123;</div><div class="line">  <span class="keyword">let</span> key</div><div class="line">  socket.on(<span class="string">'data'</span>,e=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(!key)&#123;</div><div class="line">      <span class="comment">//握手</span></div><div class="line">      key=e.toString().match(<span class="regexp">/Sec-WebSocket-Key: (.+)/</span>)[<span class="number">1</span>];</div><div class="line">      key=crypto.createHash(<span class="string">'sha1'</span>).update(key+WS).digest(<span class="string">'base64'</span>);</div><div class="line">      socket.write(<span class="string">'HTTP/1.1 101 Switching Protocols\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Upgrade: websocket\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Connection: Upgrade\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Sec-WebSocket-Accept: '</span>+key+<span class="string">'\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'\r\n'</span>);</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">      <span class="keyword">var</span> frame=decodeDataFrame(e);</div><div class="line">      <span class="built_in">console</span>.log(frame);</div><div class="line">      <span class="keyword">if</span>(frame.Opcode==<span class="number">8</span>)&#123;</div><div class="line">        socket.end(); <span class="comment">//断开连接</span></div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// 数据帧的解码</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">decodeDataFrame</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> i=<span class="number">0</span>,j,s,frame=&#123;</div><div class="line">    <span class="comment">//解析前两个字节的基本数据</span></div><div class="line">    FIN:e[i]&gt;&gt;<span class="number">7</span>,<span class="attr">Opcode</span>:e[i++]&amp;<span class="number">15</span>,<span class="attr">Mask</span>:e[i]&gt;&gt;<span class="number">7</span>,</div><div class="line">    <span class="attr">PayloadLength</span>:e[i++]&amp;<span class="number">0x7F</span></div><div class="line">  &#125;;</div><div class="line">  <span class="comment">//处理特殊长度126和127</span></div><div class="line">  <span class="keyword">if</span>(frame.PayloadLength==<span class="number">126</span>)</div><div class="line">    frame.length=(e[i++]&lt;&lt;<span class="number">8</span>)+e[i++];</div><div class="line">  <span class="keyword">if</span>(frame.PayloadLength==<span class="number">127</span>)</div><div class="line">    i+=<span class="number">4</span>, <span class="comment">//长度一般用四字节的整型，前四个字节通常为长整形留空的</span></div><div class="line">    frame.length=(e[i++]&lt;&lt;<span class="number">24</span>)+(e[i++]&lt;&lt;<span class="number">16</span>)+(e[i++]&lt;&lt;<span class="number">8</span>)+e[i++];</div><div class="line">  <span class="comment">//判断是否使用掩码</span></div><div class="line">  <span class="keyword">if</span>(frame.Mask)&#123;</div><div class="line">    <span class="comment">//获取掩码实体</span></div><div class="line">    frame.MaskingKey=[e[i++],e[i++],e[i++],e[i++]];</div><div class="line">    <span class="comment">//对数据和掩码做异或运算</span></div><div class="line">    <span class="keyword">for</span>(j=<span class="number">0</span>,s=[];j&lt;frame.PayloadLength;j++)</div><div class="line">      s.push(e[i+j]^frame.MaskingKey[j%<span class="number">4</span>]);</div><div class="line">  &#125;<span class="keyword">else</span> s=e.slice(i,frame.PayloadLength); <span class="comment">//否则直接使用数据</span></div><div class="line">  <span class="comment">//数组转换成缓冲区来使用</span></div><div class="line">  s=<span class="keyword">new</span> Buffer(s);</div><div class="line">  <span class="comment">//如果有必要则把缓冲区转换成字符串来使用</span></div><div class="line">  <span class="keyword">if</span>(frame.Opcode==<span class="number">1</span>)s=s.toString();</div><div class="line">  <span class="comment">//设置上数据部分</span></div><div class="line">  frame.PayloadData=s;</div><div class="line">  <span class="comment">//返回数据帧</span></div><div class="line">  <span class="keyword">return</span> frame;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 数据帧的编码</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">encodeDataFrame</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> s=[],o=<span class="keyword">new</span> Buffer(e.PayloadData),l=o.length;</div><div class="line">  <span class="comment">//输入第一个字节</span></div><div class="line">  s.push((e.FIN&lt;&lt;<span class="number">7</span>)+e.Opcode);</div><div class="line">  <span class="comment">//输入第二个字节，判断它的长度并放入相应的后续长度消息</span></div><div class="line">  <span class="comment">//永远不使用掩码</span></div><div class="line">  <span class="keyword">if</span>(l&lt;<span class="number">126</span>)s.push(l);</div><div class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(l&lt;<span class="number">0x10000</span>)s.push(<span class="number">126</span>,(l&amp;<span class="number">0xFF00</span>)&gt;&gt;<span class="number">2</span>,l&amp;<span class="number">0xFF</span>);</div><div class="line">  <span class="keyword">else</span> s.push(</div><div class="line">    <span class="number">127</span>, <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="comment">//8字节数据，前4字节一般没用留空</span></div><div class="line">    (l&amp;<span class="number">0xFF000000</span>)&gt;&gt;<span class="number">6</span>,(l&amp;<span class="number">0xFF0000</span>)&gt;&gt;<span class="number">4</span>,(l&amp;<span class="number">0xFF00</span>)&gt;&gt;<span class="number">2</span>,l&amp;<span class="number">0xFF</span></div><div class="line">  );</div><div class="line">  <span class="comment">//返回头部分和数据部分的合并缓冲区</span></div><div class="line">  <span class="keyword">return</span> Buffer.concat([<span class="keyword">new</span> Buffer(s),o]);</div><div class="line">&#125;</div><div class="line"></div><div class="line">server.listen(<span class="number">3000</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> net=<span class="built_in">require</span>(<span class="string">'net'</span>)</div><div class="line"><span class="keyword">const</span> crypto=<span class="built_in">require</span>(<span class="string">'crypto'</span>)</div><div class="line"><span class="keyword">const</span> WS=<span class="string">'258EAFA5-E914-47DA-95CA-C5AB0DC85B11'</span> <span class="comment">// 固定字符串</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> server=net.createServer(<span class="function">(<span class="params">socket</span>)=&gt;</span>&#123;</div><div class="line">  <span class="keyword">let</span> key</div><div class="line">  socket.on(<span class="string">'data'</span>,e=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(!key)&#123;</div><div class="line">      <span class="comment">//握手</span></div><div class="line">      key=e.toString().match(<span class="regexp">/Sec-WebSocket-Key: (.+)/</span>)[<span class="number">1</span>];</div><div class="line">      key=crypto.createHash(<span class="string">'sha1'</span>).update(key+WS).digest(<span class="string">'base64'</span>);</div><div class="line">      socket.write(<span class="string">'HTTP/1.1 101 Switching Protocols\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Upgrade: websocket\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Connection: Upgrade\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'Sec-WebSocket-Accept: '</span>+key+<span class="string">'\r\n'</span>);</div><div class="line">      socket.write(<span class="string">'\r\n'</span>);</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">      <span class="keyword">let</span> frame=decodeDataFrame(e);</div><div class="line">      <span class="built_in">console</span>.log(frame);</div><div class="line">      <span class="keyword">if</span>(frame.Opcode==<span class="number">8</span>)&#123;</div><div class="line">        socket.end(); <span class="comment">//断开连接</span></div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// 数据帧的解码</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">decodeDataFrame</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> i=<span class="number">0</span>,j,s,frame=&#123;</div><div class="line">    <span class="comment">//解析前两个字节的基本数据</span></div><div class="line">    FIN:e[i]&gt;&gt;<span class="number">7</span>,<span class="attr">Opcode</span>:e[i++]&amp;<span class="number">15</span>,<span class="attr">Mask</span>:e[i]&gt;&gt;<span class="number">7</span>,</div><div class="line">    <span class="attr">PayloadLength</span>:e[i++]&amp;<span class="number">0x7F</span></div><div class="line">  &#125;;</div><div class="line">  <span class="comment">//处理特殊长度126和127</span></div><div class="line">  <span class="keyword">if</span>(frame.PayloadLength==<span class="number">126</span>)</div><div class="line">    frame.length=(e[i++]&lt;&lt;<span class="number">8</span>)+e[i++];</div><div class="line">  <span class="keyword">if</span>(frame.PayloadLength==<span class="number">127</span>)</div><div class="line">    i+=<span class="number">4</span>, <span class="comment">//长度一般用四字节的整型，前四个字节通常为长整形留空的</span></div><div class="line">    frame.length=(e[i++]&lt;&lt;<span class="number">24</span>)+(e[i++]&lt;&lt;<span class="number">16</span>)+(e[i++]&lt;&lt;<span class="number">8</span>)+e[i++];</div><div class="line">  <span class="comment">//判断是否使用掩码</span></div><div class="line">  <span class="keyword">if</span>(frame.Mask)&#123;</div><div class="line">    <span class="comment">//获取掩码实体</span></div><div class="line">    frame.MaskingKey=[e[i++],e[i++],e[i++],e[i++]];</div><div class="line">    <span class="comment">//对数据和掩码做异或运算</span></div><div class="line">    <span class="keyword">for</span>(j=<span class="number">0</span>,s=[];j&lt;frame.PayloadLength;j++)</div><div class="line">      s.push(e[i+j]^frame.MaskingKey[j%<span class="number">4</span>]);</div><div class="line">  &#125;<span class="keyword">else</span> s=e.slice(i,frame.PayloadLength); <span class="comment">//否则直接使用数据</span></div><div class="line">  <span class="comment">//数组转换成缓冲区来使用</span></div><div class="line">  s=<span class="keyword">new</span> Buffer(s);</div><div class="line">  <span class="comment">//如果有必要则把缓冲区转换成字符串来使用</span></div><div class="line">  <span class="keyword">if</span>(frame.Opcode==<span class="number">1</span>)s=s.toString();</div><div class="line">  <span class="comment">//设置上数据部分</span></div><div class="line">  frame.PayloadData=s;</div><div class="line">  <span class="comment">//返回数据帧</span></div><div class="line">  <span class="keyword">return</span> frame;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 数据帧的编码</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">encodeDataFrame</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> s=[],o=<span class="keyword">new</span> Buffer(e.PayloadData),l=o.length;</div><div class="line">  <span class="comment">//输入第一个字节</span></div><div class="line">  s.push((e.FIN&lt;&lt;<span class="number">7</span>)+e.Opcode);</div><div class="line">  <span class="comment">//输入第二个字节，判断它的长度并放入相应的后续长度消息</span></div><div class="line">  <span class="comment">//永远不使用掩码</span></div><div class="line">  <span class="keyword">if</span>(l&lt;<span class="number">126</span>)s.push(l);</div><div class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(l&lt;<span class="number">0x10000</span>)s.push(<span class="number">126</span>,(l&amp;<span class="number">0xFF00</span>)&gt;&gt;<span class="number">2</span>,l&amp;<span class="number">0xFF</span>);</div><div class="line">  <span class="keyword">else</span> s.push(</div><div class="line">    <span class="number">127</span>, <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="comment">//8字节数据，前4字节一般没用留空</span></div><div class="line">    (l&amp;<span class="number">0xFF000000</span>)&gt;&gt;<span class="number">6</span>,(l&amp;<span class="number">0xFF0000</span>)&gt;&gt;<span class="number">4</span>,(l&amp;<span class="number">0xFF00</span>)&gt;&gt;<span class="number">2</span>,l&amp;<span class="number">0xFF</span></div><div class="line">  );</div><div class="line">  <span class="comment">//返回头部分和数据部分的合并缓冲区</span></div><div class="line">  <span class="keyword">return</span> Buffer.concat([<span class="keyword">new</span> Buffer(s),o]);</div><div class="line">&#125;</div><div class="line"></div><div class="line">server.listen(<span class="number">3000</span>)</div></pre></td></tr></table></figure>
 </li>
 <li><p>web端</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ws=<span class="keyword">new</span> WebSocket(<span class="string">'ws://xxx:3000'</span>)</div><div class="line">ws.onopen=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  ...</div><div class="line">&#125;</div><div class="line">ws.onmessage=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  ...</div><div class="line">&#125;</div><div class="line">ws.onerror=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  ...</div><div class="line">&#125;</div><div class="line">ws.onclose=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -476,7 +513,7 @@ this (执行环境)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/23/面试问题汇总/" data-id="cj0w74eul00008gamkku7ypde" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/23/面试问题汇总/" data-id="cj0xncjix0000hsamfajzx1gh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端开发/">前端开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li></ul>
